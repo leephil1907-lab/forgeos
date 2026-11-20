@@ -11,7 +11,7 @@ import { categories, resources, type Resource } from './data';
 type Section = 'Overview'|'Resource Library'|'AI Studio'|'Design Studio'|'Film Studio'|'Development Lab'|'Startup Launchpad'|'Projects'|'Workflows';
 type Project = { id:string; name:string; description:string; status:string; createdAt:string };
 type WorkflowItem = { id:string; name:string; description:string; steps:string[]; createdAt:string };
-type MenuName = 'workspace'|'profile'|'create'|'help'|null;
+type MenuName = 'workspace'|'profile'|'top-profile'|'create'|'help'|null;
 const nav:{label:Section;icon:any;group:string}[]=[
  {label:'Overview',icon:Grid2X2,group:'Workspace'},{label:'Resource Library',icon:Library,group:'Workspace'},
  {label:'AI Studio',icon:WandSparkles,group:'Create'},{label:'Design Studio',icon:Layers3,group:'Create'},
@@ -87,8 +87,8 @@ function App(){
    </div>
   </aside>
   <main className="main-area">
-   <header className="topbar"><button className="icon-button menu-trigger" onClick={()=>setMobile(true)} aria-label="Open navigation"><Menu size={20}/></button><div className="breadcrumbs"><span>ForgeOS</span><span className="crumb-slash">/</span><strong>{section}</strong></div><div className="top-actions"><button className="search-trigger" onClick={openSearch}><Search size={15}/><span>Search anything...</span><kbd>⌘ K</kbd></button><button className="icon-button top-help" onClick={()=>setHelpOpen(true)} aria-label="Help"><CircleHelp size={18}/></button><button className="top-avatar" onClick={()=>setMenu(menu==='profile'?null:'profile')} aria-label="Open profile menu">F</button></div></header>
-   {menu==='profile'&&<div className="top-profile-menu"><strong>Personal workspace</strong><span>Local mode</span><button onClick={()=>{setSettingsOpen(true);setMenu(null)}}>Open settings <ArrowRight size={14}/></button></div>}
+   <header className="topbar"><button className="icon-button menu-trigger" onClick={()=>setMobile(true)} aria-label="Open navigation"><Menu size={20}/></button><div className="breadcrumbs"><span>ForgeOS</span><span className="crumb-slash">/</span><strong>{section}</strong></div><div className="top-actions"><button className="search-trigger" onClick={openSearch}><Search size={15}/><span>Search anything...</span><kbd>⌘ K</kbd></button><button className="icon-button top-help" onClick={()=>setHelpOpen(true)} aria-label="Help"><CircleHelp size={18}/></button><button className="top-avatar" onClick={()=>setMenu(menu==='top-profile'?null:'top-profile')} aria-label="Open profile menu">F</button></div></header>
+   {menu==='top-profile'&&<div className="top-profile-menu"><strong>Personal workspace</strong><span>Local mode</span><button onClick={()=>{setSettingsOpen(true);setMenu(null)}}>Open settings <ArrowRight size={14}/></button></div>}
    <div className="page-content">
     <div className="page-heading"><div><div className="eyebrow"><span className="live-dot"/> YOUR FOUNDER COMMAND CENTRE</div><h1>{title}</h1><p>{descriptions[section]}</p></div><div className="heading-actions"><button className="button button-quiet" onClick={()=>go('Resource Library')}><Library size={16}/> Browse resources</button><div className="create-menu-wrap"><button className="button button-primary" onClick={()=>setMenu(menu==='create'?null:'create')}><Plus size={16}/> Create new <ChevronDown size={14}/></button>{menu==='create'&&<div className="create-menu"><button onClick={()=>{go('Projects');setProjectForm(true)}}><FolderKanban size={15}/> New project</button><button onClick={()=>{go('Workflows');setWorkflowForm(true)}}><Workflow size={15}/> New workflow</button><button onClick={()=>go('Resource Library')}><Library size={15}/> Find a resource</button></div>}</div></div></div>
     {section==='Overview'&&<>
