@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Activity, ArrowDownRight, ArrowRight, ArrowUpRight, Bookmark, Boxes, BrainCircuit, Check, ChevronDown, CircleHelp, Command, Compass, Film, FolderKanban, Gauge, Github, Grid2X2, Layers3, Library, Menu, Plus, Search, Settings2, Sparkles, WandSparkles, X, Zap } from 'lucide-react';
+import { Activity, ArrowRight, ArrowUpRight, Bookmark, Boxes, ChevronDown, CircleHelp, Command, Compass, Film, FolderKanban, Grid2X2, Layers3, Library, Menu, Plus, Search, Settings2, Sparkles, WandSparkles, X, Zap } from 'lucide-react';
 import { categories, resources, type Resource } from './data';
 
 type Section = 'Overview'|'Resource Library'|'AI Studio'|'Design Studio'|'Film Studio'|'Development Lab'|'Startup Launchpad'|'Projects'|'Workflows';
