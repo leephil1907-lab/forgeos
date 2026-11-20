@@ -1,0 +1,26 @@
+export type Resource = { id:string; name:string; description:string; category:string; url:string; type:string; featured?:boolean; tags:string[] };
+export const resources: Resource[] = [
+{id:'jiro',name:'Jiro.build',description:'A library of prompts, interfaces and reusable website sections for faster product design.',category:'Design',url:'https://jiro.build',type:'Design library',featured:true,tags:['UI','Prompts','Web']},
+{id:'godly',name:'Godly',description:'Curated websites with ambitious visual design, interaction and motion references.',category:'Design',url:'https://godly.website',type:'Inspiration',featured:true,tags:['Web design','Motion']},
+{id:'landbook',name:'Land-book',description:'A curated gallery of landing pages and web design inspiration.',category:'Design',url:'https://land-book.com',type:'Gallery',tags:['Landing pages']},
+{id:'mobbin',name:'Mobbin',description:'Real-world mobile and web app interface patterns from leading products.',category:'Design',url:'https://mobbin.com',type:'UI reference',featured:true,tags:['Mobile','UX']},
+{id:'fontshare',name:'Fontshare',description:'A collection of quality fonts available for personal and commercial use.',category:'Design',url:'https://fontshare.com',type:'Typography',tags:['Fonts']},
+{id:'coolors',name:'Coolors',description:'Generate, explore and refine colour palettes for product interfaces.',category:'Design',url:'https://coolors.co',type:'Colour tools',tags:['Colour']},
+{id:'lucide',name:'Lucide',description:'Consistent open-source icon library for product interfaces.',category:'Development',url:'https://lucide.dev',type:'Icon library',tags:['Icons','Open source']},
+{id:'svgl',name:'SVGL',description:'Brand logos in SVG format for product and integration directories.',category:'Design',url:'https://svgl.app',type:'Asset library',tags:['SVG','Logos']},
+{id:'shots',name:'Shots',description:'Create polished product mockups and launch visuals.',category:'Design',url:'https://shots.so',type:'Mockups',tags:['Marketing']},
+{id:'comfyui',name:'ComfyUI',description:'Node-based interface for building and running reproducible generative media workflows.',category:'AI Studio',url:'https://github.com/Comfy-Org/ComfyUI',type:'GitHub repository',featured:true,tags:['Images','Workflows','Open source']},
+{id:'remotion',name:'Remotion',description:'Create programmatic videos using React components and code.',category:'Film Studio',url:'https://github.com/remotion-dev/remotion',type:'GitHub repository',tags:['Video','React']},
+{id:'three',name:'Three.js',description:'JavaScript 3D library for creating interactive 3D experiences in the browser.',category:'Film Studio',url:'https://github.com/mrdoob/three.js',type:'GitHub repository',tags:['3D','WebGL']},
+{id:'gsap',name:'GSAP',description:'Animation toolkit for high-quality web motion and interaction.',category:'Development',url:'https://github.com/greensock/GSAP',type:'GitHub repository',tags:['Animation']},
+{id:'ffmpeg',name:'FFmpeg',description:'Powerful multimedia framework for processing audio, video and streams.',category:'Film Studio',url:'https://github.com/FFmpeg/FFmpeg',type:'GitHub repository',tags:['Video','Audio']},
+{id:'ecc',name:'Everything Claude Code',description:'Agent skills, workflows and development practices for coding-agent environments.',category:'Development',url:'https://github.com/affaan-m/everything-claude-code',type:'GitHub repository',tags:['Agents','Engineering']},
+{id:'rea',name:'REA',description:'Explore how a function works in another application without needing its source code.',category:'Development',url:'https://github.com/morluto/rea',type:'GitHub repository',tags:['Reverse engineering']},
+{id:'indiehackers',name:'Indie Hackers',description:'Community for founders building profitable internet businesses.',category:'Launchpad',url:'https://indiehackers.com',type:'Founder community',featured:true,tags:['Community','Growth']},
+{id:'peerlist',name:'Peerlist',description:'Share products and work with a community of builders and professionals.',category:'Launchpad',url:'https://peerlist.io',type:'Launch directory',tags:['Distribution']},
+{id:'betalist',name:'BetaList',description:'Discover and submit early-stage startups and new products.',category:'Launchpad',url:'https://betalist.com',type:'Launch directory',tags:['Launch']},
+{id:'devhunt',name:'DevHunt',description:'Launch developer tools and reach an audience of software builders.',category:'Launchpad',url:'https://devhunt.org',type:'Launch directory',tags:['Developer tools']},
+{id:'hn',name:'Hacker News',description:'Reach the technology community through Show HN and thoughtful product discussion.',category:'Launchpad',url:'https://news.ycombinator.com',type:'Community',tags:['Distribution','Community']},
+{id:'microlaunch',name:'MicroLaunch',description:'Launch and validate products with an early-adopter community.',category:'Launchpad',url:'https://microlaunch.net',type:'Launch directory',tags:['Launch']},
+];
+export const categories = ['All resources','Design','AI Studio','Film Studio','Development','Launchpad'];
