@@ -35,10 +35,8 @@ export const resources: Resource[] = [
 {id:'shipnlaunch',name:'Shipnlaunch',description:'A directory for discovering and promoting newly launched products.',category:'Launchpad',url:'https://shipnlaunch.com',type:'Launch directory',tags:['Launch','Distribution']},
 {id:'submitsaas',name:'SubmitSaaS',description:'A directory for submitting SaaS products and gaining discovery.',category:'Launchpad',url:'https://submitsaas.com',type:'Launch directory',tags:['SaaS','Submission']},
 {id:'whatlaunched',name:'What Launched Today',description:'Discover recently launched products and startup releases.',category:'Launchpad',url:'https://whatlaunched.today',type:'Launch discovery',tags:['New products']},
-{id:'microlaunch',name:'MicroLaunch',description:'Launch and validate products with an early-adopter community.',category:'Launchpad',url:'https://microlaunch.net',type:'Launch directory',tags:['Launch']},
 {id:'crunchbase',name:'Crunchbase',description:'Research companies, funding activity and startup ecosystems.',category:'Launchpad',url:'https://crunchbase.com',type:'Company intelligence',tags:['Research','Funding']},
 {id:'devpost',name:'Devpost',description:'Discover hackathons and showcase software projects.',category:'Launchpad',url:'https://devpost.com',type:'Developer community',tags:['Hackathons']},
-{id:'devhunt',name:'DevHunt',description:'Launch developer tools and reach an audience of software builders.',category:'Launchpad',url:'https://devhunt.org',type:'Launch directory',tags:['Developer tools']},
 {id:'goodfirms',name:'GoodFirms',description:'Research software products, service providers and company listings.',category:'Launchpad',url:'https://goodfirms.co',type:'Business directory',tags:['Reviews','Discovery']},
 {id:'f6s',name:'F6S',description:'Find startup programmes, accelerators, grants and founder opportunities.',category:'Launchpad',url:'https://f6s.com',type:'Startup network',tags:['Accelerators','Funding']},
 {id:'launchllama',name:'Launch Llama',description:'Discover directories and launch opportunities for new products.',category:'Launchpad',url:'https://tools.launchllama.com',type:'Launch resource',tags:['Directories']},
@@ -51,7 +49,6 @@ export const resources: Resource[] = [
 {id:'g2',name:'G2',description:'Software reviews and category pages for product research and discovery.',category:'Launchpad',url:'https://g2.com',type:'Software reviews',tags:['Reviews','SaaS']},
 {id:'theresanaiforthat',name:'There’s An AI For That',description:'Explore a broad directory of AI tools by task and use case.',category:'AI Studio',url:'https://theresanaiforthat.com',type:'AI directory',tags:['AI tools']},
 {id:'saasworthy',name:'SaaSworthy',description:'Research SaaS products, categories and software comparisons.',category:'Launchpad',url:'https://saasworthy.com',type:'SaaS directory',tags:['SaaS','Research']},
-{id:'betalist',name:'BetaList',description:'Discover and submit early-stage startups and new products.',category:'Launchpad',url:'https://betalist.com',type:'Launch directory',tags:['Launch']},
 {id:'tinystartups',name:'Tiny Startups',description:'Discover small software businesses and indie products.',category:'Launchpad',url:'https://tinystartups.co',type:'Startup directory',tags:['Indie','Discovery']},
 {id:'saashub',name:'SaaSHub',description:'Software discovery and comparison directory for SaaS products.',category:'Launchpad',url:'https://saashub.com',type:'Software directory',tags:['SaaS','Alternatives']},
 {id:'uneed',name:'Uneed',description:'Discover and launch products to an audience of early adopters.',category:'Launchpad',url:'https://uneed.best',type:'Launch directory',tags:['Launch']},
@@ -61,6 +58,5 @@ export const resources: Resource[] = [
 {id:'futurepedia',name:'Futurepedia',description:'Browse AI tools and applications across practical categories.',category:'AI Studio',url:'https://futurepedia.io',type:'AI directory',tags:['AI tools']},
 {id:'sideprojectors',name:'SideProjectors',description:'Discover, showcase and buy or sell side projects.',category:'Launchpad',url:'https://sideprojectors.com',type:'Project marketplace',tags:['Side projects']},
 {id:'aitoolly',name:'AIToolly',description:'Explore AI tools and related resources.',category:'AI Studio',url:'https://aitoolly.com',type:'AI directory',tags:['AI tools']},
-{id:'peerlist',name:'Peerlist',description:'Share products and work with a community of builders and professionals.',category:'Launchpad',url:'https://peerlist.io',type:'Launch directory',tags:['Distribution']},
 ];
 export const categories = ['All resources','Design','AI Studio','Film Studio','Development','Launchpad'];
