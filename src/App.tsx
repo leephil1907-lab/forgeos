@@ -69,6 +69,7 @@ function App(){
  const removeWorkflow=(id:string)=>{const next=workflows.filter(w=>w.id!==id);setWorkflows(next);localStorage.setItem('forgeos:workflows',JSON.stringify(next))};
  useEffect(()=>{const key=(e:KeyboardEvent)=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();go('Resource Library');setTimeout(()=>document.getElementById('global-search')?.focus(),80)}if(e.key==='Escape'){setSelected(null);setProjectForm(false);setWorkflowForm(false);setMenu(null);setMobile(false);setSettingsOpen(false);setHelpOpen(false)}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key)},[]);
  useEffect(()=>{if(!notice)return;const id=window.setTimeout(()=>setNotice(''),2600);return()=>window.clearTimeout(id)},[notice]);
+ useEffect(()=>{document.body.style.overflow=mobile?'hidden':'';return()=>{document.body.style.overflow=''}},[mobile]);
  const featured=resources.filter(r=>r.featured).slice(0,6);
  const sectionResources=section==='Overview'?featured:filtered;
  const title=section==='Overview'?<>Build without<br/><em>the chaos.</em></>:section;
