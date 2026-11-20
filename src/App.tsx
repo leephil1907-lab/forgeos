@@ -4,7 +4,7 @@ import {
   Activity, ArrowRight, ArrowUpRight, Bookmark, Boxes, Check, ChevronDown, CircleHelp,
   Command, Compass, Film, FolderKanban, Grid2X2, Layers3, Library, LogOut, Menu,
   Plus, Search, Settings2, Sparkles, WandSparkles, X, Zap, Rocket, SlidersHorizontal,
-  ExternalLink, MoreHorizontal, Workflow, PanelLeftClose, Bell, UserRound, Clock3
+  ExternalLink, MoreHorizontal, Workflow, PanelLeftClose, Clock3
 } from 'lucide-react';
 import { categories, resources, type Resource } from './data';
 
