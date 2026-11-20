@@ -71,7 +71,6 @@ function App(){
  useEffect(()=>{if(!notice)return;const id=window.setTimeout(()=>setNotice(''),2600);return()=>window.clearTimeout(id)},[notice]);
  useEffect(()=>{document.body.style.overflow=mobile?'hidden':'';return()=>{document.body.style.overflow=''}},[mobile]);
  const featured=resources.filter(r=>r.featured).slice(0,6);
- const sectionResources=section==='Overview'?featured:filtered;
  const title=section==='Overview'?<>Build without<br/><em>the chaos.</em></>:section;
  const openSearch=()=>{go('Resource Library');setTimeout(()=>document.getElementById('global-search')?.focus(),80)};
  return <div className="app-shell">
